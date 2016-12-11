@@ -1,0 +1,26 @@
+cwurData
+world_rank,institution,country,national_rank,quality_of_education,alumni_employment,quality_of_faculty,publications,influence,citations,broad_impact,patents,score,year
+65,"National Taiwan University",Taiwan,1,113,24,210,46,216,283,215,637,54.19,2014
+57,"National Taiwan University",Taiwan,1,92,25,218,46,223,182,204,695,54.23,2015
+
+shanghaiData
+world_rank,university_name,national_rank,total_score,alumni,award,hici,ns,pub,pcp,year
+153-202,National Taiwan University,1,,15.4,0.0,7.9,7.3,53.2,15.8,2005
+151-200,National Taiwan University,1,,14.8,0.0,7.7,7.4,55.5,16.7,2006
+151-202,National Taiwan University,1,,14.4,0.0,7.4,10.0,55.6,16.7,2007
+152-200,National Taiwan University,1,,13.7,0.0,7.3,10.3,57.6,17.5,2008
+101-151,National Taiwan University,1,,13.4,0.0,10.3,9.9,59.6,18.3,2009
+101-150,National Taiwan University,1,,13.1,0.0,16.1,11.6,59.6,19.7,2010
+102-150,National Taiwan University,1,,13.2,0.0,17.7,12.7,58.8,19.2,2011
+101-150,National Taiwan University,1,,12.1,0.0,17.7,12.7,59.5,19.5,2012
+101-150,National Taiwan University,1,,11.8,0.0,13.9,13.1,57.9,19.9,2014
+151-200,National Taiwan University,1,,11.5,0.0,13.9,11.6,55.5,19.4,2015
+
+timesData
+world_rank,university_name,country,teaching,international,research,citations,income,total_score,num_students,student_staff_ratio,international_students,female_male_ratio,year
+115,National Taiwan University,Taiwan,50.3,29.2,59.0,61.6,35.7,55.2,"31,891",11.9,7%,39 : 61,2011
+154,National Taiwan University,Taiwan,47.8,20.7,58.5,39.2,40.0,46.2,"31,891",11.9,7%,39 : 61,2012
+134,National Taiwan University,Taiwan,56.4,24.6,65.7,45.5,44.0,53.2,"31,891",11.9,7%,39 : 61,2013
+142,National Taiwan University,Taiwan,47.1,27.3,58.3,47.8,47.1,49.2,"31,891",11.9,7%,39 : 61,2014
+155,National Taiwan University,Taiwan,48.8,27.5,57.3,47.7,43.8,49.3,"31,891",11.9,7%,39 : 61,2015
+=167,National Taiwan University,Taiwan,54.1,27.7,58.0,47.3,49.6,51.1,"31,891",11.9,7%,39 : 61,2016
