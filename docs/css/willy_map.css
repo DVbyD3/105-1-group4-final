@@ -1,0 +1,78 @@
+svg { width:100%; height: 100% }
+      .button_label {
+          width: 1024px;
+          height: 32px;
+      }
+      .gradient_scale {
+          background: linear-gradient(to right,  #fcf29c 0%,#de8926 50%,#663413 100%);
+          display: table;
+          width: 1024px;
+          height: 24px;
+          opacity: 0;
+          -webkit-transition: all 1s ease-in-out;
+          -moz-transition: all 1s ease-in-out;
+          -o-transition: all 1s ease-in-out;
+          -ms-transition: all 1s ease-in-out;
+          transition: all 1s ease-in-out;
+      }
+      .left {float: left; color: white; padding-left: 10px; }
+      .right {float: right; color: white; padding-right: 10px; }
+
+      .sort_label
+      {
+          font-family: "neutra-2-display-1";
+          text-transform: uppercase;
+          font-weight: 800;
+          font-size: 11px;
+          letter-spacing: .15em;
+      }
+
+      #tooltip_top_100.hidden {
+          display: none;
+      }
+      #tooltip_choro.hidden {
+          display: none;
+      }
+
+      #tooltip_choro
+      {
+          position: absolute;
+          width: 105px;
+          height: auto;
+          padding: 5px;
+          background-color: white;
+          -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+          -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+      }
+      #country_name
+      {
+          font-family: "neutra-2-text-1";
+          font-weight: bold;
+          font-size: 14px;
+          padding-bottom: 5px;
+          margin-bottom: 5px;
+      }
+
+      #tooltip_top_100
+      {
+          position: absolute;
+          width: 105px;
+          height: auto;
+          padding: 5px;
+          background-color: white;
+          -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+          -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);    
+      }
+      
+      #school_name
+      {
+          font-family: "neutra-2-text-1";
+          font-weight: bold;
+          font-size: 14px;
+          border-bottom: 1px solid black;
+          padding-bottom: 5px;
+          margin-bottom: 5px;
+      }
+      .university_tip {font-size: 10px; font-family: "neutra-2-text-1", sans-serif;  }
