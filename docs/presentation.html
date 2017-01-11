@@ -52,59 +52,65 @@
 	</section>
 	<section class="slide">
 		<h2>引言</h2>
-		<ol>
+		<ul>
 			<li>大家畢業後想要出國留學嗎?</li>
 			<li>如果出國的話要選擇哪間學校呢?</li>
-			<li>我們做了世界各國大學的排名</li>
-			<li>讓大家能更方便選擇留學的學校</li>
-			<li>而同時也看一下台大在世界中的地位</li>
 			<li>是出國或是留在台大更好呢?</li>
-		</ol>
+			<br/>
+			<li>我們做了世界各國大學的排名<br/>
+				讓大家能更方便選擇留學的學校<br/>
+				而同時也看一下台大在世界中的地位</li>
+		</ul>
 		<!-- <p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p> -->
 	</section>
 	<section class="slide">
 		<h2>臺灣大學2014、2015與2016各項評鑑</h2>
-		<ol>
+		<ul>
 			<li>動機：每年新聞上總會提到臺大的全球排名上升或下降，但是究竟是什麼樣的原因造成每年的排名會有所異動？台大相較全球其他頂尖大學的優勢與劣勢又在何處？</li>
 			<li>簡述：使用排名而非數值化，使各項評比可以互相參照。表中可發現臺大的全球排名逐漸上升，在各項評比皆十分平均，而且在教育和出版數量、引用數均在水準以上，然而在專利數量上較為劣勢是可惜之處</li>
 			<li>圖表說明：每條bar使用rect class畫，利用mousemove偵測滑鼠是否在rect的範圍內，如果在rect內，將出現tooltip顯示Data值。</li>
-		</ol>
+		</ul>
 	</section>
 	<section class="slide">
 		<h2>臺灣大學2014、2015與2016各項評鑑</h2>
 		<img id="p4_img" src="img/presentation/p4_Evaluation_rank.jpg" alt="" class="cover">
 		<style>
 			#p4_img {
+				position: absolute;
 				width: 600px;
 				height: 300px;
+				top: 350px;
 			}
 		</style>
 	</section>
 	<section class="slide">
 		<h2>臺大歷年論文出版數</h2>
-		<ol>
+		<ul>
 			<li>
 				動機：前面可以看到，臺大的出版數和引用數量是優勢的地方，而其中出版數最重要的指標為論文的出版，究竟台大論文出版的變化趨勢如何？是否和排名的成長相關呢？
 			</li>
 			<li>簡述：圖表可以看到在論文出版上理工類比起社科類的數量更多，可能原因是理工類的題目數與出版管道較多，而理工類有的資源大於社科類也是原因。</li>
 			<li>圖表說明：使用scaletime和scalelinear定義x與y，在兩個類別的資料分別存入兩條valueline內，並以class line繪出</li>
-		</ol>
+		</ul>
 	</section>
 	<section class="slide">
 		<h2>臺大歷年論文出版數</h2>
 		<img id="p6_img" src="img/presentation/p6_Paper_publish.jpg" alt="">
 		<style>
 			#p6_img {
+				position: absolute;
 				width: 600px;
-				height: 300px;
+				height: 400px;
+				top: 200px;
+				left: 200px;
 			}
 		</style>
 	</section>
 	<section class="slide">
 		<h2>嚴選潛力大學</h2>
-		<ol>
+		<ul>
 			<li>簡述：觀察世界百大在2012年到2015年間排名的變化，找出排名進步的學校，並根據2012年的排名及名次進步來計算Progress Index 並分類出Aggressive University 和 Potential University，嚴選出潛力大學，幫助大家在選擇學校上多一點參考。</li>
-		</ol>
+		</ul>
 	</section>
 	<section class="slide">
 		<h2>嚴選潛力大學</h2>
@@ -116,9 +122,11 @@
 		      <img id="p8_img_2" src="img/presentation/p8right_progress_rank.jpg" alt="">
 		  </div>
 		</div>
-		<p>bubble半徑是排名進步的多寡，bubble越大表示名次進步越多。<br/>
-		紫色bubble為Aggressive University，而黃色bubble為Potential University。<br/>
-		點選bubble後會出現學校名稱及其Progress Index，旁邊會顯現歷年名次折線圖。</p>
+		<ul>
+			<li>bubble半徑是排名進步的多寡，bubble越大表示名次進步越多。</li>
+			<li>紫色bubble為Aggressive University，而黃色bubble為Potential University。</li>
+			<li>點選bubble後會出現學校名稱及其Progress Index，旁邊會顯現歷年名次折線圖。</li>
+		</ul>
 		<style>
 			#p8_img_1 {
 				width: 350px;
@@ -134,16 +142,16 @@
 	</section>
 	<section class="slide">
 		<h2>世界百大地圖</h2>
-		<ol>
+		<ul>
 			<li>動機：讓大家在世界地圖點選全球前一百大</li>
 			<li>簡述：這張圖可供大家查看百大所在的位置，可以觀察到百大高度集中在美國東西岸、法德英與東亞，同時此這張圖表也有呈現校徽和學校的連結，方便有興趣的人點進學校官網深入了解</li>
 			<li>圖表說明：排名越高的學校用越大的圓圈表示，
 			Mouseover會出現校名、校徽、排名以及學校網址的連結</li>
 			<li>資料來源：<br/>
-				地圖 - http://enjalot.github.io/wwsd/data/world/world-110m.geojson<br/>
+				地圖 - <a href="http://enjalot.github.io/wwsd/data/world/world-110m.geojson">http://enjalot.github.io/wwsd/data/world/world-110m.geojson</a><br/>
 				前百大經緯度、校徽、網址 - 自行蒐集<br/>
 			</li>
-		</ol>
+		</ul>
 	</section>
 	<section class="slide">
 		<h2>世界百大地圖</h2>
@@ -157,12 +165,12 @@
 	</section>
 	<section class="slide">
 		<h2>世界頂尖大學分布圖</h2>
-		<ol>
+		<ul>
 			<li>動機：清楚了解前百大分布國家</li>
 			<li>簡述：表中看出前百大多分布於歐美國家與東亞，可以看到這些國家的高等教育發展通常較早，同時也可以看到在經濟實方強勁的程度和其前百大分佈的數量成相關</li>
 			<li>圖表說明：<br/>擁有越多前1000名大學的國家顏色越深<br/>Mouseover會出現國名以及前1000名大學的數量</li>
 			<li>資料來源：<a href="https://www.kaggle.com/mylesoneill/world-university-rankings">https://www.kaggle.com/mylesoneill/world-university-rankings</a></li>
-		</ol>
+		</ul>
 	</section>
 	<section class="slide">
 		<h2>世界頂尖大學分布圖</h2>
@@ -175,123 +183,6 @@
 		</style>
 	</section>
 
-<!-- 
-	<section class="slide">
-		<h2>Two columns if you like</h2>
-		<p class="double">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-	</section>
-	<section class="slide">
-		<h2>All kind of lists</h2>
-		<ol>
-			<li>Simple lists are marked with bullets</li>
-			<li>Ordered lists begin with a number</li>
-			<li>You can even nest lists one inside another
-				<ul>
-					<li>Or mix their types</li>
-					<li>But do not go too far</li>
-					<li>Otherwise audience will be bored</li>
-				</ul>
-			</li>
-			<li>Look, seven rows exactly!</li>
-		</ol>
-	</section>
-	<section class="slide">
-		<h2>Serious citations</h2>
-		<figure>
-			<blockquote>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-			</blockquote>
-			<figcaption>Marcus Tullius Cicero</figcaption>
-		</figure>
-	</section>
-	<section class="slide">
-		<h2>Code samples</h2>
-		<pre>
-			<code>&lt;!DOCTYPE html&gt;</code>
-			<code class="mark">&lt;html lang="en"&gt;</code>
-			<code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-			<code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-			<code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-			<code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-			<code><mark>&lt;/head&gt;</mark></code>
-		</pre>
-	</section>
-	<section class="slide">
-		<h2>Even tables</h2>
-		<table>
-		<tr>
-			<th scope="col">Locavore</th>
-			<th>Umami</th>
-			<th>Helvetica</th>
-			<th>Vegan</th>
-		</tr>
-		<tr>
-			<th scope="row">Fingerstache</th>
-			<td>Kale</td>
-			<td>Chips</td>
-			<td>Keytar</td>
-		</tr>
-		<tr>
-			<th scope="row">Sriracha</th>
-			<td>Gluten-free</td>
-			<td>Ennui</td>
-			<td>Keffiyeh</td>
-		</tr>
-		<tr>
-			<th scope="row">Thundercats</th>
-			<td>Jean</td>
-			<td>Shorts</td>
-			<td>Biodiesel</td>
-		</tr>
-		<tr>
-			<th scope="row">Terry</th>
-			<td>Richardson</td>
-			<td>Swag</td>
-			<td>Blog</td>
-		</tr>
-		</table>
-		<p>It’s good to have information organized.</p>
-	</section>
-	<section class="slide" id="picture">
-		<h2>Pictures</h2>
-		<img src="pictures/picture.jpg" alt="" class="cover">
-		<style>
-			#picture h2 {
-				color:#FFF;
-				}
-		</style>
-	</section>
-	<section class="slide">
-		<h2 class="shout shrink">You can even shout this way</h2>
-	</section>
-	<section class="slide">
-		<h2>Inner navigation</h2>
-		<ol>
-			<li>Lets you reveal list items one by one</li>
-			<li class="next">To keep some key points</li>
-			<li class="next">In secret from audience</li>
-			<li class="next">But it will work only once</li>
-			<li class="next">Nobody wants to see the same joke twice</li>
-		</ol>
-	</section>
-	<section class="slide grid">
-		<h2>All nicely aligned to grid</h2>
-	</section>
-	<section class="slide" id="see-more">
-		<h2 class="shout">
-			<img src="pictures/logo.svg" alt="Shower logo">
-			<a href="https://github.com/shower/shower">See more on GitHub</a>
-		</h2>
-		<style>
-			#see-more h2 {
-				font-size:100px
-				}
-			#see-more img {
-				width:0.72em;
-				height:0.72em;
-				}
-		</style>
-	</section> -->
 	<p class="badge">
 		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
 	</p>
