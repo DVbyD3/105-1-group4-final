@@ -191,7 +191,7 @@
         .attr("transform", "translate(" + 2 * margin + ",0)")
         .call(yAxis);
 
-    svg_lilly.selectAll(".h").data(d3.range(0, 200, 20)).enter()
+    svg_lilly.selectAll(".h").data(d3.range(0, 100, 20)).enter()
         .append("line").classed("h", 1)
         .attr("x1", 2 * margin).attr("x2", width - margin)
         .attr("y1", y).attr("y2", y);
