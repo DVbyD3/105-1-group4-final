@@ -269,7 +269,7 @@
     var width = 1024;
     var height = 768;
     
-    var svg = d3.select("#willy_map").append("svg");
+    var svg = d3.select("#willy_map").append("svg").attr("width",width).attr("height",height);
 
     var projection = d3.geoMercator()
       .scale(width / 2 / Math.PI)
