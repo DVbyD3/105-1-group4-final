@@ -13,8 +13,9 @@
 }
 
 </style>
-<body></body>
-<!-- <svg width="960" height="500"></svg> -->
+<body>
+  
+</body>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script>
 
@@ -47,12 +48,11 @@ d3.csv("./data/ntu-ranking-all.csv", function(error, data) {
   if (error) throw error;
   data.forEach(function(d) {
       d.year = parseTime(d.year);
+      d.world_rank = +d.world_rank;
   });
 
   x.domain(d3.extent(data, function(d) { return d.year; }));
   y.domain(d3.extent(data, function(d) { return d.world_rank; }));
-
-
 
   svg.append("g")
       .attr("class", "axis axis--x")
@@ -73,13 +73,12 @@ d3.csv("./data/ntu-ranking-all.csv", function(error, data) {
   var dataNest = d3.nest()
     .key(function(d) {return d.source;})
     .entries(data);
-
+  
   dataNest.forEach(function(d) {
-    console.log(d);
     svg.append("path")
       .data([d])
       .attr("class", "line")
-      .attr("d", line(d.values)); 
+      .attr("d", function (d) { return line(d.values); }); 
 
   });
 });
