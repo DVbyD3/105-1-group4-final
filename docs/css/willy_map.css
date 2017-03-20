@@ -48,7 +48,13 @@ svg { width:100%; height: 100% }
           margin-bottom: 5px;
       }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
 
-      #top_100, #choro {
+      #top_100 {
+          position: relative;
+          left: 100px;
+          background-color: white;
+      }
+
+      #choro {
           position: relative;
           left: 100px;
           background-color: white;
