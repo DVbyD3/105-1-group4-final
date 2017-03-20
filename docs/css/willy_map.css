@@ -2,6 +2,7 @@ svg { width:100%; height: 100% }
       .button_label {
           width: 1024px;
           height: 32px;
+          text-align: center;
       }
       .gradient_scale {
           background: linear-gradient(to right,  #fcf29c 0%,#de8926 50%,#663413 100%);

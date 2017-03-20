@@ -590,18 +590,18 @@
     
     var width = 1024;
     var height = 500;
-    
     var svg = d3.select("#willy_map").append("svg").attr("width",width).attr("height",height);
+    var url = "world-110m.geojson";
 
     var projection = d3.geoMercator()
-      .scale(width / 2 / Math.PI)
+      .scale(150)
       //.scale(100)
-      .translate([width / 2, height / 2])
+      .translate([560, 340])
 
     var path = d3.geoPath()
       .projection(projection);
     
-    var url = "world-110m.geojson";
+    
     // Set the range and domain for color (scaleQuantize)
     var color = d3.scaleQuantize()
                   .range(["#F2C972", "#E6A74F",
