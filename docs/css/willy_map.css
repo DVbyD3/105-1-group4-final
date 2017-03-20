@@ -7,7 +7,7 @@ svg { width:100%; height: 100% }
       .gradient_scale {
           background: linear-gradient(to right,  #fcf29c 0%,#de8926 50%,#663413 100%);
           display: table;
-          width: 1024px;
+          width: 100%;
           height: 24px;
           opacity: 0;
           -webkit-transition: all 1s ease-in-out;
@@ -26,6 +26,10 @@ svg { width:100%; height: 100% }
           font-weight: 800;
           font-size: 11px;
           letter-spacing: .15em;
+      }
+
+      #map_intro {
+          margin-bottom: -30px;
       }
 
       #tooltip_top_100.hidden {
