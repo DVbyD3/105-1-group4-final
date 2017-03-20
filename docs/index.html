@@ -46,13 +46,15 @@
     }
     </style>
     <link href="css/willy_map.css" rel="stylesheet">
-    
+    <link href="buttons/css/buttons.css" rel="stylesheet">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="buttons/css/buttons.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://d3js.org/d3-selection-multi.v0.4.min.js"></script>
 </head>
@@ -535,7 +537,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center" id="map_intro">
                     <h2 class="section-heading">Map</h2>
-                    <h3 class="section-subheading text-muted">Here we show some maps we create to visualize the data. <br><br> Click on the buttons below to see where the top universities are located at, <br><br> and which countries have the highest number of top universities
+                    <h3 class="section-subheading text-muted">Here we show some maps to visualize the data. <br><br> Click on the buttons below to see where the top universities are located at, <br><br> and which countries have the highest number of top universities
                 </div>
             </div>
             <div class="row">
@@ -563,8 +565,16 @@
                       </div>
                 </div>
                 <div class="button_label">
-                  <button id="top100" onclick="showTopUniversities()">Top 100 Universties</button>
-                  <button id="choro" onclick="showUniversityChoropleth()">Number of top 1000 universities for each country</button>
+                <!--  
+                  <a class="waves-effect waves-light btn" id="top100" onclick="showTopUniversities()">Top Universties</a>
+                  <a class="waves-effect waves-light btn" id="choro" onclick="showUniversityChoropleth()">Top Countries</a>
+                
+                  <a class="btn orange" id="top100" onclick="showTopUniversities()" href="#top100">Top Universties</a>
+
+                -->
+                  <button class="btn orange" id="top100" onclick="showTopUniversities()">Top Universties</button>
+                  <button class="btn orange" id="choro" onclick="showUniversityChoropleth()">Top Countries</button>
+                
                 </div>
                 
               </div>
@@ -922,7 +932,7 @@
             </div>
         </div>
     </section>
-
+.orange:focus
     <footer>
         <div class="container">
             <div class="row">
@@ -938,7 +948,7 @@
                         </li> -->
                     </ul>
                 </div>
-            </div>
+            </div>Boot
         </div>
     </footer>
 
