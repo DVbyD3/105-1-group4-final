@@ -586,7 +586,12 @@
         </div>
     </section>
   <script>
-  
+
+    d3.selection.prototype.moveToFront = function() {
+      return this.each(function(){
+        this.parentNode.appendChild(this);
+      });
+    };
     
     var width = 1024;
     var height = 500;
@@ -637,6 +642,9 @@
            return projection([d.long, d.lat])[1];
          })
          .on("mouseover", function(d) {
+            // Move circles to front
+            d3.select(this).moveToFront();
+            
             // Change color
             d3.select(this).style("fill", "#4C2C00");
             
@@ -653,7 +661,7 @@
               tooltip.transition()    
                      .style("opacity", .9)
                      .style("left", xPosition + "px")
-                 .style("top", yPosition + "px");    
+                     .style("top", yPosition + "px");    
             
           tooltip.select("#school_name")
                  .text(d.institution);
@@ -761,17 +769,21 @@
               svg.selectAll(".country")
                   .data(json.features)
                   .on("mouseover", function(d){
-                       
-                        // Add tool tip for choropleth
+                // Get position of mouse
+                var xPosition = d3.mouse(this)[0];
+                var yPosition = d3.mouse(this)[1];
+                // Add tool tip for choropleth
                 var tooltip = d3.select("#tooltip_choro");
                 tooltip.classed("hidden", false);
                 tooltip.transition()
                           .duration(500)    
                           .style("opacity", 0);
-                    tooltip.transition()    
+                tooltip.transition()    
                           .style("opacity", .9)
-                          .style("left", (d3.event.pageX) + 20 + "px")
-                            .style("top", (d3.event.pageY) - 30 + "px");   
+                          //.attr("x", xPosition)
+                          //.attr("y", yPosition)
+                          .style("left", xPosition + "px")
+                          .style("top", yPosition + "px");   
                 tooltip.select("#country_name")
                     .text(d.properties.name);
                 tooltip.select("#top_1000_num_text")
