@@ -587,11 +587,13 @@
     </section>
   <script>
 
+    /*
     d3.selection.prototype.moveToFront = function() {
       return this.each(function(){
         this.parentNode.appendChild(this);
       });
     };
+    */
     
     var width = 1024;
     var height = 500;
@@ -627,7 +629,7 @@
             .attr("stroke", "white")
             .attr("stroke-width", "0.5px")
             .attr("fill", "#E6A74E");
-  });
+
 
     d3.csv("world_final.csv", function(data) {
               
@@ -643,7 +645,7 @@
          })
          .on("mouseover", function(d) {
             // Move circles to front
-            d3.select(this).moveToFront();
+            //d3.select(this).moveToFront();
             
             // Change color
             d3.select(this).style("fill", "#4C2C00");
@@ -696,7 +698,7 @@
          .style("opacity", 0.75)
     });
 
-
+  });
     function showTopUniversities(){
       //Remove mouseover and mouseout effect
       cancel_hover()
